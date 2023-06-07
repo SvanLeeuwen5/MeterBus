@@ -5,5 +5,9 @@
       "topic": "TOPIC",
       "username" : "USERNAME",
       "password" : "PASSWORD"
-    }
+    },
+    "wifi" : {
+        "SSID" : "USERNAME",
+        "password" : "PASSWORD"
+      }
 }

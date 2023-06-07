@@ -2,13 +2,16 @@
 import network
 import esp
 import gc
+import json
 
 esp.osdebug(None)
 gc.collect()
 
+
+wifi_config = json.loads(open('config.json'))['wifi']
 #TODO Replace with your WIFI SSID and PASS
-ssid = 'REPLACE_WITH_YOUR_SSID'
-password = 'REPLACE_WITH_YOUR_PASSWORD'
+ssid = wifi_config['SSID']
+password = wifi_config['password']
 
 station = network.WLAN(network.STA_IF)
 
