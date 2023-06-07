@@ -1,6 +1,6 @@
 # boot.py -- run on boot-up
 import time
-from umqttsimple import MQTTClient
+from umqtt.simple import MQTTClient
 import ubinascii
 import machine
 import json
@@ -24,14 +24,12 @@ def main():
     except OSError as e:
         restart_and_reconnect()
 
-
-
     last_message = 0
     message_interval = 5
     counter = 0
 
     #MBUS = class
-
+    
     while True:
         try:
             client.check_msg()

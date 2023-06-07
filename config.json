@@ -1,13 +1,13 @@
 {
     "mqtt" : {
-      "host" : "HOST",
+      "host" : "sendlab.nl",
       "port": 11883,
-      "topic": "TOPIC",
-      "username" : "USERNAME",
-      "password" : "PASSWORD"
+      "topic": "smartmeter/raw",
+      "username" : "smartmeter",
+      "password" : "se_smartmeter"
     },
     "wifi" : {
-        "SSID" : "USERNAME",
-        "password" : "PASSWORD"
+        "SSID" : "sendlab-iot",
+        "password" : "Sendlab@LA121"
       }
 }
