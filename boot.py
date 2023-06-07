@@ -1,14 +1,9 @@
 # boot.py -- run on boot-up
-import time
-from umqttsimple import MQTTClient
-import ubinascii
-import machine
-import micropython
 import network
 import esp
-import upip
-esp.osdebug(None)
 import gc
+
+esp.osdebug(None)
 gc.collect()
 
 #TODO Replace with your WIFI SSID and PASS
@@ -25,4 +20,3 @@ while station.isconnected() == False:
 
 print('Connection successful')
 
-upip.install('micropython-umqtt.simple')

@@ -5,15 +5,5 @@
       "topic": "TOPIC",
       "username" : "USERNAME",
       "password" : "PASSWORD"
-    },
-    "logger" : {
-      "update_rate": 10
-    },
-    "influxdb" : {
-      "org": "",
-      "bucket": "DB_NAME",
-      "token": "",
-      "host": "",
-      "port": 8086
     }
-  }
+}
